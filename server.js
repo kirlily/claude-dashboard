@@ -4,7 +4,7 @@ const path = require('path');
 const os = require('os');
 
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT || 3000;
 
 const CLAUDE_DIR = path.join(os.homedir(), '.claude');
 const CLAUDE_JSON = path.join(os.homedir(), '.claude.json');
