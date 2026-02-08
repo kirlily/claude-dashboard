@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3000;
 const CLAUDE_DIR = path.join(os.homedir(), '.claude');
 const CLAUDE_JSON = path.join(os.homedir(), '.claude.json');
 const CREDENTIALS_JSON = path.join(CLAUDE_DIR, '.credentials.json');
-const STATS_CACHE = path.join(CLAUDE_DIR, 'stats-cache.json');
+const STATS_CACHE = path.join(__dirname, 'stats-cache.json');
 const PROJECTS_DIR = path.join(CLAUDE_DIR, 'projects');
 
 app.use(express.static(path.join(__dirname, 'public')));
